@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусная Закусочная</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🍴</span>
+                <h1>Вкусная Закусочная</h1>
+            </div>
+            <nav class="nav">
+                <a href="#menu">Меню</a>
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Добро пожаловать в мир вкуса</h2>
+            <p>Свежие блюда, приготовленные с любовью каждый день</p>
+            <button class="cta-button" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
+                Посмотреть меню
+            </button>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Наше меню</h2>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="business-lunch">
+                    <span class="category-icon">🍽️</span>
+                    Бизнес-ланчи
+                </button>
+                <button class="category-btn" data-category="appetizers">
+                    <span class="category-icon">🥗</span>
+                    Закуски
+                </button>
+                <button class="category-btn" data-category="rolls">
+                    <span class="category-icon">🍣</span>
+                    Роллы
+                </button>
+                <button class="category-btn" data-category="pizza">
+                    <span class="category-icon">🍕</span>
+                    Пицца
+                </button>
+                <button class="category-btn" data-category="soups">
+                    <span class="category-icon">🍜</span>
+                    Супы
+                </button>
+                <button class="category-btn" data-category="salads">
+                    <span class="category-icon">🥗</span>
+                    Салаты
+                </button>
+                <button class="category-btn" data-category="wok">
+                    <span class="category-icon">🥢</span>
+                    Вок
+                </button>
+                <button class="category-btn" data-category="desserts">
+                    <span class="category-icon">🍰</span>
+                    Десерты
+                </button>
+            </div>
+
+            <div class="menu-items" id="menu-items">
+                <!-- Меню будет загружено через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>О нашей закусочной</h2>
+                <p>Мы готовим с душой уже более 10 лет. Наши повара используют только свежие продукты и проверенные рецепты, чтобы каждое блюдо было незабываемым.</p>
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature-icon">⚡</span>
+                        <h3>Быстрая подача</h3>
+                        <p>Готовим за 15 минут</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🌱</span>
+                        <h3>Свежие продукты</h3>
+                        <p>Ежедневные поставки</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">👨🍳</span>
+                        <h3>Опытные повара</h3>
+                        <p>Профессионалы своего дела</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>📍 ул. Примерная, 123</p>
+                    <p>📞 +7 (999) 123-45-67</p>
+                    <p>⏰ Ежедневно 9:00 - 23:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Доставка</h3>
+                    <p>🚚 Бесплатная доставка от 800₽</p>
+                    <p>⏱️ Время доставки 30-45 мин</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Вкусная Закусочная. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
